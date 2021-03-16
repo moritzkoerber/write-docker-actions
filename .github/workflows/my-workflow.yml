@@ -21,7 +21,7 @@ jobs:
         id: cat
 
       - name: create-issue
-        uses: ./.gihtub/actions/issue-maker
+        uses: ./.github/actions/issue-maker
         with: 
           repoToken: ${{secrets.GITHUB_TOKEN}}
           catFact: ${{steps.cat.outputs.fact}}
